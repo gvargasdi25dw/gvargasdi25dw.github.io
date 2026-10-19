@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio Zinemaldia Gustavo</title>
+  </head>
+  <style>
+    #tabla {
+      border: 1px solid black;
+    }
+    tr, td{
+      border: 1px solid black;
+    }
+    body {
+        font-family: Arial, sans-serif;
+      }
+  </style>
+  <body>
+    <header align="center">
+        <h1>
+          <a href="https://www.sansebastianfestival.com/es/" target="_blank">
+          <img src="img/logo_zinemaldia.png" width="150px"/>
+          </a>
+          Programación del Zinemaldia 2025
+        </h1>
+    </header>
+    <main>
+    <section>
+      <h2>
+        Cartelera
+      </h2>
+      <table id="tabla" style="width: 89%" >
+        <tr>
+          <td><b>Día</b></td>
+          <td><b>Pelicula</b></td>
+          <td><b>Director</b></td>
+          <td><b>Sala</b></td>
+          <td><b>Hora</b></td>
+          <td><b>Sección</b></td>
+        </tr>
+        <tr>
+          <td>10/20 Septiembre</td>
+          <td>27 Noches</td>
+          <td>Esther García</td>
+          <td>Kursal 1</td>
+          <td>20:00</td>
+          <td rowspan="2">Sección Oficial</td>
+        </tr>
+        <tr>
+          <td>20/21 Septiembre</td>
+          <td>Bad Apples</td>
+          <td>J.M. Rodiguez</td>
+          <td>Kursal 2</td>
+          <td>17:00</td>
+        </tr>
+        <tr>
+          <td>21/22 Septiembre</td>
+          <td>Orwell: 2+2*5</td>
+          <td rowspan="2">L. Martinez</td>
+          <td>Victoria Eugenia Antzokia</td>
+          <td>18:30</td>
+          <td rowspan="2">Zabaltegi-Tabakalera</td>
+        </tr>
+        <tr>
+          <td>18/22 Septiembre</td>
+          <td>Six Days in Spring</td>
+          <td>Principal</td>
+          <td>16:00</td>
+        </tr>
+        <tr>
+          <td>20/23 Septiembre</td>
+          <td>La tarta del presidente</td>
+          <td>M. Al-Qasab</td>
+          <td>Principe 2</td>
+          <td>19:00</td>
+          <td>Zuzendari berriak</td>
+        </tr>
+      </table>
+    </section>
+    <section>
+      <h2>Compra de entradas</h2>
+      <form style="width: 89%">
+        <fieldset>
+          <legend>Datos de reserva:</legend>
+          <label for="pelicula">Elige una pelicula:</label>
+          <select id="pelicula" name="pelicula">
+            <optgroup label="Sección oficial">
+                <option value="27-noches">27 Noches</option>
+                <option value="bad-apples">Bad Apples</option>
+            </optgroup>
+            <optgroup label="Zabaltegi-Tabakalera">
+                <option value="Orwell: 2+2*5">Orwell: 2+2*5</option>
+                <option value="Six Days in Spring">Six Days in Spring</option>
+            </optgroup>
+            <optgroup label="Zubzendari berriak">
+                <option value="La tarta del presidente">La tarta del presidente</option>
+            </optgroup>
+          </select><br><br>
+          <fieldset>
+            <legend>Elige el día:</legend>
+            <input type="radio" id="dia" name="dia">
+            <label for="dia">18 Septiembre</label>
+            <input type="radio" id="dia" name="dia">
+            <label for="dia">19 Septiembre</label><br>
+            <input type="radio" id="dia" name="dia">
+            <label for="dia">20 Septiembre</label>
+            <input type="radio" id="dia" name="dia">
+            <label for="dia">21 Septiembre</label><br>
+            <input type="radio" id="dia" name="dia">
+            <label for="dia">22 Septiembre</label>
+            <input type="radio" id="dia" name="dia">
+            <label for="dia">23 Septiembre</label>
+          </fieldset><br>
+          <label for="numentradas">Num. Entradas</label>
+          <input type="checkbox" id="numentradas" name="entradas">
+          <label for="numero">1</label>
+          <input type="checkbox" id="numentradas" name="entradas">
+          <label for="numero">2</label>
+          <input type="checkbox" id="numentradas" name="entradas">
+          <label for="numero">3</label>
+          <input type="checkbox" id="numentradas" name="entradas">
+          <label for="numero">4</label>
+          <input type="checkbox" id="numentradas" name="entradas">
+          <label for="numero">5</label>
+        </fieldset><br>
+        <fieldset>
+          <legend>Tus datos:</legend>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre"><br><br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email"><br><br>
+          <label for="numtelefono">Num. Teléfono:</label>
+          <input type="tel" id="numtelefono" name="numtelefono"><br>
+        </fieldset><br>
+        <input type="submit" id="enviar" value="Comprar">
+        <input type="reset" id="restablecer" value="Restablecer">
+      </form>
+    </section><br>
+    </main>
+    <footer>
+      <img src="img/pie_zinemaldia.png" alt="pie_zinemaldia">
+    </footer>
+  </body>
+
+</html>
